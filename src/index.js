@@ -16,9 +16,7 @@ const books=[{
   img: "https://m.media-amazon.com/images/I/51B7kuFwQFL._SX329_BO1,204,203,200_.jpg",
   id:2
 }];
-function handleButtonClick(){
-  alert('hello')
-}
+
 const Book=(props)=>{
   const {id ,img,title,author,getBook}=props
   return (
@@ -26,18 +24,16 @@ const Book=(props)=>{
       <h2>{title}</h2>
       <img src={img} alt={title} />
       <h4>{author}</h4>
-      <button onClick={()=>{getBook(id)}}>See more</button>
+      <button>See more</button>
     </div>
   );
 }
 const Booklist=()=>{
-const getBook=(id)=>{const book=books.find((book)=> book.id===id)
-      console.log(book)
-}
+
     return (
       <section>
         {books.map((book) => {
-          return <Book {...book} key={book.id} getBook={getBook}/>;
+          return <Book {...book} key={book.id} />;
         })}
       </section>
     );
