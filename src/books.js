@@ -12,4 +12,10 @@ export const books = [
     img: "https://m.media-amazon.com/images/I/51B7kuFwQFL._SX329_BO1,204,203,200_.jpg",
     id: 2,
   },
+  {
+    title: "Fourth Wing (The Empyrean, 1)",
+    author: "Rebecca Yarros",
+    img: "https://m.media-amazon.com/images/I/51j8bRH5sDL._SX307_BO1,204,203,200_.jpg",
+    id: 3,
+  },
 ];
