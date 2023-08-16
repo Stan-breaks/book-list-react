@@ -8,8 +8,9 @@ const Booklist=()=>{
 
     return (
       <section>
-        {books.map((book) => {
-          return <Book {...book} key={book.id} />;
+        <h1>Amazon best sellers</h1>
+        {books.map((book,index ) => {
+          return <Book {...book} number={index}  key={book.id} />;
         })}
       </section>
     );

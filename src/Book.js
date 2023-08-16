@@ -1,11 +1,12 @@
 export const Book = (props) => {
-  const { id, img, title, author } = props;
+  const { id, img, title, author,number } = props;
+  console.log(number) 
   return (
-    <div key={id}>
-      <h2>{title}</h2>
+    <div className="book" key={id}>
       <img src={img} alt={title} />
+      <h2>{title}</h2>
       <h4>{author}</h4>
-      <button>See more</button>
+      <span className="number">{`#${number + 1}`}</span>
     </div>
   );
 };
